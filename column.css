@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsla(0, 0%, 100%, 0.75);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.parent .sedans,
+.parent .suvs,
+.parent .Luxury{
+    width: 230px;
+    height: 360px;
+}
+.parent{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent .sedans{
+    position: relative;
+    background-color: hsl(31, 77%, 52%);
+    padding: 50px 40px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-bottom: 60px;
+}
+.parent .suvs{
+    position: relative;
+    background-color: hsl(184, 100%, 22%);
+    padding: 50px 40px;
+    padding-bottom: 60px;
+}
+.parent .Luxury{
+    position: relative;
+    background-color: hsl(179, 100%, 13%);
+    padding: 50px 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 60px;
+}
+.parent .sedans h2{
+    color: #fff;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.parent .sedans p{
+    color: #fff;
+    line-height: 1.8;
+    width: 210px;
+    padding: 20px 0;
+    margin: 20px 0 60px;
+    font-size: 17px;
+}
+.parent .sedans a{
+    color: hsl(31, 77%, 52%);
+    background: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.parent .suvs h2{
+    color: #fff;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.parent .suvs p{
+    color: #fff;
+    line-height: 1.8;
+    width: 210px;
+    padding: 20px 0;
+    margin: 20px 0 60px;
+    font-size: 17px;
+}
+.parent .suvs a{
+    color: hsl(184, 100%, 22%);
+    background: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.parent .Luxury h2{
+    color: #fff;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+.parent .Luxury p{
+    color: #fff;
+    line-height: 1.8;
+    width: 210px;
+    padding: 20px 0;
+    margin: 20px 0 60px;
+    font-size: 17px;
+}
+.parent .Luxury a{
+    color: hsl(179, 100%, 13%);
+    background: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+.parent .fa-solid{
+    font-size: 30px;
+    margin-left: 26px;
+    color: rgba(128, 128, 128, 0.808);
+}
+.parent .sedans::before{
+    position: absolute;
+    content: '';
+    top: 35px;
+    left: 40px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.432);
+    opacity: .5;
+}
+.parent .suvs::before{
+    position: absolute;
+    content: '';
+    top: 45px;
+    left: 40px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.432);
+    opacity: .4;
+}
+
+.parent .Luxury::before{
+    position: absolute;
+    content: '';
+    top: 45px;
+    left: 40px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.432);
+    opacity: .4;
+}
+@media (max-width:1000px) {
+    .parent{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50%;
+        margin-bottom: 50%;
+    }
+    .parent .sedans{
+        padding: 50px 30px 80px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+    .parent .suvs{
+        padding: 60px 30px 80px;
+    }
+    .parent .Luxury{
+        padding: 60px 30px 80px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .parent .sedans,
+    .parent .suvs,
+    .parent .Luxury{
+        height: 200px;
+    }
+    .parent .sedans h2{
+        margin: 10px 0;
+    }
+    .parent .sedans p{
+        padding: 10px 0;
+        margin: 10px 0 30px;
+        line-height: 1.5;
+        width: 260px;
+    }
+    .parent .sedans a{
+        padding: 10px 24px;
+    }
+
+    .parent .suvs h2{
+        margin: 10px 0;
+    }
+    .parent .suvs p{
+        padding: 10px 0;
+        margin: 10px 0 30px;
+        line-height: 1.5;
+        width: 260px;
+    }
+    .parent .suvs a{
+        padding: 10px 24px;
+    }
+
+    .parent .Luxury h2{
+        margin: 10px 0;
+    }
+    .parent .Luxury p{
+        padding: 10px 0;
+        margin: 10px 0 30px;
+        line-height: 1.5;
+        width: 260px;
+    }
+    .parent .Luxury a{
+        padding: 10px 24px;
+    }
+    .parent .fa-solid{
+        font-size: 24px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+}
